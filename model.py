@@ -13,12 +13,12 @@ def build_model(num_classes):
 
     # 2nd convolution layer
     model.add(Conv2D(64, (3, 3), activation='relu'))
-    model.add(Conv2D(64, (3, 3), activation='relu'))
+    # model.add(Conv2D(64, (3, 3), activation='relu'))
     model.add(AveragePooling2D(pool_size=(3, 3), strides=(2, 2)))
 
     # 3rd convolution layer
     model.add(Conv2D(128, (3, 3), activation='relu'))
-    model.add(Conv2D(128, (3, 3), activation='relu'))
+    # model.add(Conv2D(128, (3, 3), activation='relu'))
     model.add(AveragePooling2D(pool_size=(3, 3), strides=(2, 2)))
 
     model.add(Flatten())
